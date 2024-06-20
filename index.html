@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+
+        @media screen and (max-width: 680px) {
+            *[class].wtable {
+                width: 300px !important;
+            }
+
+            *[class].large {
+                display: none !important;
+            }
+
+            *[class].small {
+                display: block !important;
+                width: 300px !important;
+                overflow: visible !important;
+                float: none !important;
+            }
+
+            *[class].hide,
+            .hide {
+                width: 1px !important;
+                max-height: none !important;
+                display: none !important;
+                overflow: visible !important;
+                float: none !important;
+            }
+
+            *[class].btn {
+                font-size: 12px !important;
+            }
+
+            *[class].w100,
+            .w100 {
+                display: block !important;
+                width: 100% !important;
+            }
+
+            *[class].fs16 {
+                font-size: 16px !important;
+                -webkit-text-size-adjust: none !important;
+            }
+
+            *[class].fs20 {
+                font-size: 20px !important;
+                -webkit-text-size-adjust: none !important;
+            }
+
+            [class].fs25 {
+                font-size: 25px !important;
+                -webkit-text-size-adjust: none !important;
+            }
+
+            [class].fs30 {
+                font-size: 30px !important;
+                -webkit-text-size-adjust: none !important;
+            }
+
+            *[class].showimage {
+                background-position: left top !important;
+                background-repeat: no-repeat !important;
+                background-size: 100% auto !important;
+                display: block !important;
+            }
+
+            *[class].f10 {
+                font-size: 10px !important;
+            }
+
+            *[class].f12 {
+                font-size: 12px !important;
+            }
+
+            *[class].f13b {
+                font-size: 13px !important;
+                font-weight: bold;
+            }
+
+            *[class].fs9,
+            .fs9 {
+                font-size: 9px !important;
+                font-weight: bold;
+            }
+
+            *[class].w10,
+            .w10 {
+                width: 10px !important;
+            }
+
+            *[class].w80 {
+                width: 80px !important;
+            }
+
+            *[class].w25,
+            .w25 {
+                width: 25px !important;
+            }
+
+            *[class].w35,
+            .w35 {
+                width: 35px !important;
+            }
+
+            *[class].w61 {
+                width: 61px !important;
+            }
+
+            *[class].w68 {
+                width: 68px !important;
+            }
+
+            *[class].w96 {
+                width: 96px !important;
+            }
+
+            *[class].w171 {
+                width: 171px !important;
+            }
+
+            *[class].ww {
+                width: 100% !important;
+            }
+
+            *[class].w215 {
+                width: 215px !important;
+            }
+
+            *[class].w276 {
+                width: 276px !important;
+            }
+
+            *[class].w277 {
+                width: 277px !important;
+            }
+
+            *[class].w300 {
+                width: 300px !important;
+            }
+
+            *[class].w320 {
+                width: 320px !important;
+            }
+
+            *[class].h2 {
+                height: 2px !important;
+            }
+
+            *[class].h10 {
+                height: 10px !important;
+            }
+
+            *[class].h15,
+            .h15 {
+                height: 15px !important;
+            }
+
+            *[class].h20 {
+                height: 20px !important;
+            }
+
+            *[class].h220 {
+                height: 220px !important;
+            }
+
+            *[class].h25 {
+                height: 25px !important;
+            }
+
+            *[class].h30 {
+                height: 30px !important;
+            }
+
+            *[class].h33,
+            .h33 {
+                height: 33px !important;
+            }
+
+            *[class].h38 {
+                height: 38px !important;
+            }
+
+            *[class].h80 {
+                height: 80px !important;
+            }
+
+            *[class].tar {
+                text-align: right !important;
+            }
+
+            *[class].block-txt-center,
+            .block-txt-center {
+                text-align: center !important;
+                margin: 0 auto !important;
+            }
+
+            *[class].totop {
+                display: table-header-group !important;
+            }
+
+            *[class].tobottom {
+                display: table-footer-group !important;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+                max-height: auto !important;
+            }
+
+            *[class].nav img {}
+
+            *[class].nav td {
+                width: auto !important;
+                text-align: center !important;
+            }
+
+            *[class].nav td[bgcolor="#ababaa"] {
+                width: 1px !important;
+            }
+
+            *[class].heading {
+                font-size: 18px !important;
+            }
+
+            *[class].secondary-message {
+                font-size: 12px !important;
+            }
+
+            *[class].force-left,
+            .force-left {
+                width: 100% !important;
+                float: left !important;
+            }
+
+            *[class].force-right {
+                width: 100% !important;
+                float: right !important;
+            }
+
+            *[class].txt-center,
+            .txt-center {
+                text-align: center;
+            }
+
+            *[class].txt-center td,
+            .txt-center td {
+                text-align: center !important;
+            }
+
+            *[class].txt-center td table,
+            .txt-center td table {
+                text-align: center !important;
+                margin: 0 auto;
+            }
+
+            *[class].auto-height {
+                height: 20px !important;
+            }
+
+            *[class].master-visual {
+                width: 180px !important;
+                height: auto !important;
+            }
+
+            *[class].auto-width {
+                width: auto !important;
+            }
+
+            *[class].centerblocks,
+            .centerblocks {
+                float: none !important;
+                margin: 0 auto !important;
+            }
+
+            *[class].rounded,
+            .rounded {
+                border-radius: 10px;
+                background: none !important;
+            }
+
+            *[class].flexible-content,
+            .flexible-content {
+                width: 100% !important;
+            }
+
+            *[class].block,
+            .block {
+                width: 100% !important;
+                text-align: center !important;
+                display: block !important;
+                margin: 0 auto !important;
+            }
+
+            *[class].blockl,
+            .blockl {
+                width: 100% !important;
+                text-align: left !important;
+                display: block !important;
+                margin: 0 auto !important;
+            }
+
+            *[class].block-txt,
+            .block-txt {
+                text-align: center !important;
+                display: block !important;
+                margin: 0 auto !important;
+            }
+
+            *[class].block-float,
+            .block-float {
+                float: left !important;
+                width: 100% !important;
+                text-align: center !important;
+                display: block !important;
+                margin: 0 auto !important;
+            }
+
+            *[class].content-block {
+                width: 100%;
+                text-align: center !important;
+                display: block !important;
+                margin: 0 auto !important;
+            }
+
+            *[class].height10 {
+                height: 10px !important;
+            }
+
+            *[class].fluid-cell {
+                width: 100%;
+                text-align: center;
+                display: block;
+                vertical-align: middle;
+            }
+
+            *[class].hidden,
+            .hidden {
+                display: none;
+            }
+
+            .wtable {
+                width: 600px;
+            }
+
+            .body {
+                background-color: #232323 !important;
+            }
+
+            .small {
+                display: none;
+                display: none !important;
+                width: 0px;
+                overflow: hidden;
+                float: left;
+            }
+
+            .ExternalClass * {
+                line-height: 100%;
+            }
+
+            .lineSpacing {
+                line-height: 18px !important;
+            }
+
+            .p-t-20 {
+                padding-top: 20px !important;
+            }
+
+            .p-t-15 {
+                padding-top: 15px !important;
+            }
+
+            .p-t-5 {
+                padding-top: 5px !important;
+            }
+
+            .p-l-r,
+            .p-l-r {
+                padding: 0 15px;
+            }
+
+            .p-l-r-50,
+            .p-l-r-50 {
+                padding: 0 50px;
+            }
+
+
+
+            .bg-color {
+                background-color: #ffffff !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" max-width="680">
+        <tr>
+            <td align="center" width="100%" valign="top" style="background-color: #f7fafc;">
+                <table class="flexible-content" role="presentation" cellpadding="0" cellspacing="0" border="0"
+                    align="center" width="100%">
+                    <tr>
+                        <td align="center" valign="top">
+                            <table width="100%" role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                align="center">
+                                <tr>
+                                    <td style="max-width: 680px;">
+                                        <img width="680" style="display:block; max-width: 680px; width: 100%;"
+                                            src="./images/banner.jpg">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td height="60" class="h30"></td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td align="center" valign="top">
+                            <table width="100%" class="flexible-content" role="presentation" cellpadding="0"
+                                cellspacing="0" border="0" align="center">
+                                <tr>
+                                    <td align="center" width="100" valign="top" class="hidden "></td>
+                                    <td class="f12" align="center" valign="top" width="480"
+                                        style="font-size: 15px; font-family: Arial, Helvetica, sans-serif; margin: 0;">
+                                        <table width="100%" class="flexible-content" role="presentation" cellpadding="0"
+                                            cellspacing="0" border="0" align="center">
+                                            <tr>
+                                                <td align="center" valign="top">
+                                                    <p style="margin: 0; line-height: 22px;" class="p-l-r lineSpacing">
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elitis
+                                                        hendrerit
+                                                        neque at
+                                                        lacus rutrum, nec suscipit eros tincidunt lorem ipsum dolor sit
+                                                        amet,
+                                                        consectetur adipiscing.</p>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td align="center" valign="top">
+                                                    <p style="margin: 0; line-height: 22px;" class="p-l-r lineSpacing">
+                                                        Duis euismod neque nterdum et malesuada fames ac ante ipsum
+                                                        primis
+                                                        in
+                                                        faucibus que congue placerat felis feugiat vestibulum.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                    <td align="center" width="100" valign="top" class="hidden"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+
+
+
+                    <tr>
+                        <td height="70" class="h33"></td>
+                    </tr>
+
+                    <tr>
+                        <td align="center" valign="top">
+                            <table width="100%" class="flexible-content" role="presentation" cellpadding="0"
+                                cellspacing="0" border="0" align="center">
+                                <tr>
+                                    <td align="center"
+                                        style="font-size: 30px; color: #11a28f; margin: 0; font-family: Arial, Helvetica, sans-serif; font-weight: bold; line-height: 38px;"
+                                        class="fs25">
+                                        The Artists
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="20" class="h10"></td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="center" valign="top">
+                            <img src="./images/divider.jpg" width="66" height="3" style="display: block;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="35" class="h20"></td>
+                    </tr>
+
+                    <tr>
+                        <td align="center" valign="top">
+                            <table width="100%" class="flexible-content" role="presentation" cellpadding="0"
+                                cellspacing="0" border="0" align="center">
+                                <tr>
+                                    <td align="center" valign="top">
+                                        <table width="100%" class="flexible-content" role="presentation" cellpadding="0"
+                                            cellspacing="0" border="0" align="center">
+                                            <tr>
+                                                <td width="30" align="center" class="hidden"></td>
+                                                <td class="block">
+                                                    <table width="100%" class="flexible-content" role="presentation"
+                                                        cellpadding="0" cellspacing="0" border="0" align="center">
+                                                        <tr>
+                                                            <td align="center" valign="top">
+                                                                <img class="w277"
+                                                                    style="margin: 0 auto; display: block; width: 230px;"
+                                                                    src="./images/john.jpg">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td width="50" align="center" class="hidden"></td>
+                                                <td width="340" class="block" align="center" valign="middle">
+                                                    <table width="100%" class="flexible-content" role="presentation"
+                                                        cellpadding="0" cellspacing="0" border="0" align="center">
+                                                        <tr>
+                                                            <td align="left" valign="middle">
+                                                                <h1 style="margin: 0 auto; padding-top: 35px; font-family: Arial, Helvetica, sans-serif; font-size: 30px; color: #11a28f"
+                                                                    class="txt-center p-l-r fs25 p-t-20">John doe
+                                                                </h1>
+
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="middle">
+                                                                <p style="margin: 0 auto; padding-top: 10px; font-size: 15px; font-family: Arial, Helvetica, sans-serif; line-height: 22px;"
+                                                                    class="txt-center p-l-r f12 lineSpacing p-t-5">
+                                                                    Interdum
+                                                                    et malesuada fames
+                                                                    ac ante ipsum primis in
+                                                                    faucibus que congue placerat felis ec suscipit eros
+                                                                    tincidunt.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="middle">
+                                                                <p style="margin: 0 auto; padding-top: 25px; font-family: Arial, Helvetica, sans-serif; color: #11a28f;"
+                                                                    class="txt-center p-l-r f12 p-t-15">
+                                                                    -MEXICO
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td width="30" class="hidden"></td>
+
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td height="35" class="h33"></td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top">
+                            <table width="100%" class="flexible-content" role="presentation" cellpadding="0"
+                                cellspacing="0" border="0" align="center">
+                                <tr>
+                                    <td align="center" valign="top" style="direction: rtl;">
+                                        <table width="100%" class="flexible-content" role="presentation" cellpadding="0"
+                                            cellspacing="0" border="0" align="center">
+                                            <tr>
+                                                <td width="30" align="center" class="hidden"></td>
+                                                <td class="block">
+                                                    <table width="100%" class="flexible-content" role="presentation"
+                                                        cellpadding="0" cellspacing="0" border="0" align="center">
+                                                        <tr>
+                                                            <td align="center" valign="top">
+                                                                <img class="w277"
+                                                                    style="margin: 0 auto; display: block; width: 230px;"
+                                                                    src="./images/jenny.jpg">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td width="50" align="center" class="hidden"></td>
+                                                <td width="340" class="block" align="center" valign="middle">
+                                                    <table width="100%" class="flexible-content" role="presentation"
+                                                        cellpadding="0" cellspacing="0" border="0" align="center">
+                                                        <tr>
+                                                            <td align="left" valign="middle">
+                                                                <h1 style="margin: 0 auto; padding-top: 35px; font-family: Arial, Helvetica, sans-serif; font-size: 30px; color: #5d4bcd"
+                                                                    class="txt-center p-l-r fs25 p-t-20">Jenny Doe
+                                                                </h1>
+
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="middle">
+                                                                <p style="margin: 0 auto; padding-top: 10px; font-size: 15px; font-family: Arial, Helvetica, sans-serif; line-height: 22px;"
+                                                                    class="txt-center p-l-r f12 lineSpacing p-t-5">
+                                                                    Interdum
+                                                                    et malesuada fames
+                                                                    ac ante ipsum primis in
+                                                                    faucibus que congue placerat felis ec suscipit eros
+                                                                    tincidunt.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="middle">
+                                                                <p style="margin: 0 auto; padding-top: 25px; font-family: Arial, Helvetica, sans-serif; color: #5d4bcd;"
+                                                                    class="txt-center p-l-r f12 p-t-15">
+                                                                    -JAPAN
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td width="30" class="hidden"></td>
+
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td height="35" class="h33"></td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top">
+                            <table width="100%" class="flexible-content" role="presentation" cellpadding="0"
+                                cellspacing="0" border="0" align="center">
+                                <tr>
+                                    <td align="center" valign="top">
+                                        <table width="100%" class="flexible-content" role="presentation" cellpadding="0"
+                                            cellspacing="0" border="0" align="center">
+                                            <tr>
+                                                <td width="30" align="center" class="hidden"></td>
+                                                <td class="block">
+                                                    <table width="100%" class="flexible-content" role="presentation"
+                                                        cellpadding="0" cellspacing="0" border="0" align="center">
+                                                        <tr>
+                                                            <td align="center" valign="top">
+                                                                <img class="w277"
+                                                                    style="margin: 0 auto; display: block; width: 230px;"
+                                                                    src="./images/mike.jpg">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td width="50" align="center" class="hidden"></td>
+                                                <td width="340" class="block" align="center" valign="middle">
+                                                    <table width="100%" class="flexible-content" role="presentation"
+                                                        cellpadding="0" cellspacing="0" border="0" align="center">
+                                                        <tr>
+                                                            <td align="left" valign="middle">
+                                                                <h1 style="margin: 0 auto; padding-top: 35px; font-family: Arial, Helvetica, sans-serif; font-size: 30px; color: #11a28f;"
+                                                                    class="txt-center p-l-r fs25 p-t-20">Mike Doe
+                                                                </h1>
+
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="middle">
+                                                                <p style="margin: 0 auto; padding-top: 10px; font-size: 15px; font-family: Arial, Helvetica, sans-serif; line-height: 22px;"
+                                                                    class="txt-center p-l-r f12 lineSpacing p-t-5">
+                                                                    Interdum
+                                                                    et malesuadafames
+                                                                    ac ante ipsum primis in
+                                                                    faucibus que congue placerat felis ec suscipit eros
+                                                                    tincidunt.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td align="left" valign="middle">
+                                                                <p style="margin: 0 auto; padding-top: 25px; font-family: Arial, Helvetica, sans-serif; color: #11a28f;"
+                                                                    class="txt-center p-l-r f12 p-t-15">
+                                                                    -HOLLAND
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td width="30" class="hidden"></td>
+
+                                            </tr>
+                                        </table>
+                                    </td>
+
+
+                                </tr>
+                                <td height="45" valign="middle" align="center" class="h30"></td>
+                                <tr>
+
+                                    <td align="center" class="p-l-r">
+
+                                        <table width="165" role="presentation" cellpadding="0" cellspacing="0"
+                                            border="0" align="center">
+                                            <tr>
+                                                <td align="center" width="100%" height="45" align="center"
+                                                    valign="middle"
+                                                    style="  text-align: center; vertical-align: middle; background-color: #11a28f;">
+                                                    <a href="#" class="f12"
+                                                        style="text-decoration: none; font-family: Arial, Helvetica, sans-serif;  font-size: 16px; padding: 15px 30px; color: white;">Meet
+                                                        All Artists</a>
+                                                </td>
+
+                                            </tr>
+                                        </table>
+
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top" height="70" class="h38">
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top">
+                            <table width="100%" class="flexible-content" role="presentation" cellpadding="0"
+                                cellspacing="0" border="0" align="center">
+                                <tr>
+                                    <td align="center" valign="top">
+                                        <img style="display: block;" src="./images/mid-sec.jpg">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="70" align="center" valign="middle" class="h38"></td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top">
+                            <table width="100%" class="flexible-content" role="presentation" cellpadding="0"
+                                cellspacing="0" border="0" align="center">
+                                <tr>
+                                    <td align="center" valign="top">
+                                        <h1 class="fs25"
+                                            style="margin: 0 auto; font-family: Arial, Helvetica, sans-serif; font-size: 30px; color: #11a28f;">
+                                            Calendar</h1>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="20" align="center" valign="top" class="h10"></td>
+                                </tr>
+                                <td align="center" valign="top">
+                                    <img src="./images/divider.jpg" style="display: block;">
+                                </td>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td height="45" align="center" valign="top" class="h30"></td>
+                    </tr>
+
+                    <tr>
+
+                        <td align="center" valign="top">
+                            <table width="100%" class="flexible-content" role="presentation" cellpadding="0"
+                                cellspacing="0" border="0" align="center">
+                                <tr>
+
+                                    <td align="center" valign="top">
+                                        <table width="100%" class="flexible-content" role="presentation" cellpadding="0"
+                                            cellspacing="0" border="0" align="center">
+                                            <tr>
+
+                                                <td align="center" valign="top" width="20" class="hidden"></td>
+
+                                                <td align="center" valign="top">
+
+                                                    <table width="100%" class="flexible-content" role="presentation"
+                                                        cellpadding="0" cellspacing="0" border="0" align="center">
+                                                        <tr>
+
+                                                            <td align="left" valign="middle" width="95" class="block">
+                                                                <p class="p-l-r txt-center fs20"
+                                                                    style="margin: 0; font-size: 25px; font-family: Arial, Helvetica, sans-serif; color: #000; ">
+                                                                    APRIL</p>
+                                                                <p class="p-l-r txt-center"
+                                                                    style="margin: 0; font-size: 25px; font-family: Arial, Helvetica, sans-serif; color: #11a28f;">
+                                                                    14</p>
+                                                            </td>
+
+                                                            <td align="center" valign="top" class="block">
+                                                                <table width="100%" class="flexible-content"
+                                                                    role="presentation" cellpadding="0" cellspacing="0"
+                                                                    border="0" align="center">
+                                                                    <tr>
+                                                                        <td class="p-t-15" align="center" valign="top"
+                                                                            style="padding-top: 20px;">
+                                                                            <img class="w215" style="display: block;"
+                                                                                src="./images/calendar-pic-1.jpg">
+
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td width="15" class="hidden" align="center"></td>
+                                                            <td align="left" valign="top" width="360" class="block"
+                                                                style="padding-top: 20px;">
+                                                                <P style="margin: 0; font-size: 20px; font-family: Arial, Helvetica, sans-serif; color: #11a28f;"
+                                                                    class="p-l-r txt-center fs16 ">
+                                                                    Lorem Event</P>
+                                                                <p style="margin: 0; font-size: 15px; font-family: Arial, Helvetica, sans-serif; color: #000000; line-height: 22px; padding-top: 10px;"
+                                                                    class="p-l-r txt-center f12 lineSpacing p-t-5">
+                                                                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                                    elitis hendrerit neque at lacus rutrum, consectetur
+                                                                    adipiscing nec suscipit eros tincidunt.</p>
+                                                            </td>
+                                                            <td align="left" width="20" class="hidden"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+
+
+
+
+
+
+                    <tr>
+                        <td height="45" align="center" valign="top" class="h30"></td>
+                    </tr>
+
+                    <tr>
+
+                        <td align="center" valign="top">
+                            <table width="100%" class="flexible-content" role="presentation" cellpadding="0"
+                                cellspacing="0" border="0" align="center">
+                                <tr>
+
+                                    <td align="center" valign="top">
+                                        <table width="100%" class="flexible-content" role="presentation" cellpadding="0"
+                                            cellspacing="0" border="0" align="center">
+                                            <tr>
+
+                                                <td align="center" valign="top" width="20" class="hidden"></td>
+
+                                                <td align="center" valign="top">
+
+                                                    <table width="100%" class="flexible-content" role="presentation"
+                                                        cellpadding="0" cellspacing="0" border="0" align="center">
+                                                        <tr>
+
+                                                            <td align="left" valign="middle" width="95" class="block">
+                                                                <p class="p-l-r txt-center fs20"
+                                                                    style="margin: 0; font-size: 25px; font-family: Arial, Helvetica, sans-serif; color: #000; ">
+                                                                    APRIL</p>
+                                                                <p class="p-l-r txt-center"
+                                                                    style="margin: 0; font-size: 25px; font-family: Arial, Helvetica, sans-serif; color: #11a28f;">
+                                                                    15</p>
+                                                            </td>
+
+                                                            <td align="center" valign="top" class="block">
+                                                                <table width="100%" class="flexible-content"
+                                                                    role="presentation" cellpadding="0" cellspacing="0"
+                                                                    border="0" align="center">
+                                                                    <tr>
+                                                                        <td align="center" valign="top"
+                                                                            style="padding-top: 20px;" class="p-t-15">
+                                                                            <img class="w215" style="display: block;"
+                                                                                src="./images/calendar-pic-2.jpg">
+
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td width="15" class="hidden" align="center"></td>
+                                                            <td align="left" valign="top" width="360"
+                                                                class="block p-t-15" style="padding-top: 20px;">
+                                                                <P style="margin: 0; font-size: 20px; font-family: Arial, Helvetica, sans-serif; color: #11a28f;"
+                                                                    class="p-l-r txt-center fs16">
+                                                                    Ipsum Event</P>
+                                                                <p style="margin: 0; font-size: 15px; font-family: Arial, Helvetica, sans-serif; color: #000000; line-height: 22px; padding-top: 10px;"
+                                                                    class="p-l-r txt-center f12 lineSpacing">
+                                                                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                                    elitis hendrerit neque at lacus rutrum, consectetur
+                                                                    adipiscing nec suscipit eros tincidunt.</p>
+                                                            </td>
+                                                            <td align="left" width="20" class="hidden"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td height="45" align="center" valign="top" class="h30"></td>
+                    </tr>
+
+                    <tr>
+
+                        <td align="center" valign="top">
+                            <table width="100%" class="flexible-content" role="presentation" cellpadding="0"
+                                cellspacing="0" border="0" align="center">
+                                <tr>
+
+                                    <td align="center" valign="top">
+                                        <table width="100%" class="flexible-content" role="presentation" cellpadding="0"
+                                            cellspacing="0" border="0" align="center">
+                                            <tr>
+
+                                                <td align="center" valign="top" width="20" class="hidden"></td>
+
+                                                <td align="center" valign="top">
+
+                                                    <table width="100%" class="flexible-content" role="presentation"
+                                                        cellpadding="0" cellspacing="0" border="0" align="center">
+                                                        <tr>
+
+                                                            <td align="left" valign="middle" width="95" class="block">
+                                                                <p class="p-l-r txt-center fs20"
+                                                                    style="margin: 0; font-size: 25px; font-family: Arial, Helvetica, sans-serif; color: #000; ">
+                                                                    APRIL</p>
+                                                                <p class="p-l-r txt-center"
+                                                                    style="margin: 0; font-size: 25px; font-family: Arial, Helvetica, sans-serif; color: #11a28f;">
+                                                                    16</p>
+                                                            </td>
+
+                                                            <td align="center" valign="top" class="block">
+                                                                <table width="100%" class="flexible-content"
+                                                                    role="presentation" cellpadding="0" cellspacing="0"
+                                                                    border="0" align="center">
+                                                                    <tr>
+                                                                        <td align="center" valign="top"
+                                                                            style="padding-top: 20px;">
+                                                                            <img class="w215" style="display: block;"
+                                                                                src="./images/calendar-pic-3.jpg">
+
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td width="15" class="hidden" align="center"></td>
+                                                            <td align="left" valign="top" width="360" class="block p-t-15"
+                                                                style="padding-top: 20px;">
+                                                                <P style="margin: 0; font-size: 20px; font-family: Arial, Helvetica, sans-serif; color: #11a28f;"
+                                                                    class="p-l-r txt-center fs16">
+                                                                    Dolor Event</P>
+                                                                <p style="margin: 0; font-size: 15px; font-family: Arial, Helvetica, sans-serif; color: #000000; line-height: 22px; padding-top: 10px;"
+                                                                    class="p-l-r txt-center f12 lineSpacing">
+                                                                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                                    elitis hendrerit neque at lacus rutrum, consectetur
+                                                                    adipiscing nec suscipit eros tincidunt.</p>
+                                                            </td>
+                                                            <td align="left" width="20" class="hidden"></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td height="40" valign="top" class="h20"></td>
+                    </tr>
+
+                    <tr>
+                        <td align="center" class="p-l-r">
+                            <table width="220" role="presentation" cellpadding="0" cellspacing="0" border="0"
+                                align="center">
+                                <tr>
+                                    <td width="100%" height="45" align="center" valign="middle"
+                                        style="background-color: #11a28f;">
+                                        <a href="#"
+                                            style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; text-decoration: none; color: white; "
+                                            class="fs13">Register Now</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td height="40" valign="top" class="h20"></td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td align="center">
+                            <table width="100%" class="flexible-content" role="presentation" cellpadding="0"
+                                cellspacing="0" border="0" align="center">
+                                <tr>
+                                    <td align="center" style="background-color: #4a60bc;">
+                                        <table width="100%" class="flexible-content" role="presentation" cellpadding="0"
+                                            cellspacing="0" border="0" align="center">
+                                            <tr>
+                                                <td height="35" class="h20"></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <p
+                                                        style="color: #ffffff; margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">
+                                                        YOURLOGO</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="10"></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <table width="100%" class="flexible-content" role="presentation"
+                                                        cellpadding="0" cellspacing="0" border="0" align="center">
+                                                        <tr>
+                                                            <td width="280" align="center"></td>
+                                                            <td align="center">
+
+                                                            <td align="center">
+                                                                <img style="display: block; min-width: 30px;" width="32"
+                                                                    height="32" src="./images/facebook2x.png">
+                                                            </td>
+                                                            <td width="12" align="center"></td>
+                                                            <td align="center">
+                                                                <img style="display: block; min-width: 30px;" width="32"
+                                                                    height="32" src="./images/twitter2x.png">
+                                                            </td>
+                                                            <td width="12" align="center"></td>
+
+                                                            <td align="center">
+                                                                <img style="display: block; min-width: 30px;" width="32"
+                                                                    height="32" src="./images/instagram2x.png">
+                                                            </td>
+                                                            <td width="280"></td>
+                                                </td>
+
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td height="10"></td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <table width="100%" class="flexible-content" role="presentation" cellpadding="0"
+                                            cellspacing="0" border="0" align="center">
+                                            <tr>
+                                                <td align="center">
+                                                    <p style="color: #ffffff; margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px;"
+                                                        class="txt-center p-l-r lineSpacing">
+                                                        Your Street 12, 34567 AB City / info@example.com / (+1) 123 456
+                                                        789</p>
+                                                    <p style="color: #ffffff; margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 13px; padding-top: 10px;"
+                                                        class="txt-center p-l-r lineSpacing">
+                                                        Unsubscribe | Manage Preferences</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td height="50"></td>
+                                </tr>
+
+
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+
+    </table>
+    </td>
+    </tr>
+
+
+    </table>
+</body>
+
+</html>
